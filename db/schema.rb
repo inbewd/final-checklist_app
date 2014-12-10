@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141210190521) do
+ActiveRecord::Schema.define(version: 20141210194129) do
 
   create_table "calendar_dates", force: true do |t|
     t.date     "day"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20141210190521) do
 
   create_table "tasks", force: true do |t|
     t.string   "title"
-    t.integer  "tally"
     t.integer  "total"
     t.datetime "created_at"
     t.datetime "updated_at"
